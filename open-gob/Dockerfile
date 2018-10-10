@@ -8,7 +8,7 @@ WORKDIR /src
 COPY ["open-gob/open-gob.csproj", "open-gob/"]
 RUN dotnet restore "open-gob/open-gob.csproj"
 COPY . .
-WORKDIR "/src/open-gob"
+WORKDIR /src/open-gob
 RUN dotnet build "open-gob.csproj" -c Release -o /app
 
 FROM build AS publish

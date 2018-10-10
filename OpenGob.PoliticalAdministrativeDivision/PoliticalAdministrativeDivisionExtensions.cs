@@ -55,8 +55,9 @@ namespace OpenGob.PoliticalAdministrativeDivision
                 GraphQLPlaygroundOptions = config.GraphQLPlaygroundOptions
             };
             builder.UseGraphQL<PoliticalAdministrativeDivisionSchema>(config.GraphQlPath);
-            if(config.GraphQLPlaygroundOptions != null)
+            if(config.GraphQLPlaygroundOptions != null) {
                 builder.UseGraphQLPlayground(config.GraphQLPlaygroundOptions);
+            }
             return builder;
         }
     }
