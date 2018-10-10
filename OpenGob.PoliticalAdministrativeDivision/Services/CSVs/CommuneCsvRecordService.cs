@@ -12,16 +12,15 @@ namespace OpenGob.PoliticalAdministrativeDivision.Services.CSVs
 {
     internal class CommuneCsvRecordService : ICommuneCsvRecordService
     {
-        List<CommuneCsvRecord> communeCsvRecords;
+        readonly List<CommuneCsvRecord> communeCsvRecords;
 
-        private readonly string COMMUNE_IMAGE_PATH = "public/images/communes/";
-        private readonly string CSV_RESOURCE_PATH = $"{Assembly.GetExecutingAssembly().GetName().Name}.CSVs.Municipalidades.csv";
-        private readonly string DELIMITER = ";";
+        readonly string COMMUNE_IMAGE_PATH = "public/images/communes/";
+        readonly string CSV_RESOURCE_PATH = $"{Assembly.GetExecutingAssembly().GetName().Name}.CSVs.Municipalidades.csv";
+        readonly string DELIMITER = ";";
 
         public CommuneCsvRecordService()
         {
             CsvReader csvReader;
-            string[] a = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(CSV_RESOURCE_PATH))
                 using (TextReader reader = new StreamReader(stream))
                 {

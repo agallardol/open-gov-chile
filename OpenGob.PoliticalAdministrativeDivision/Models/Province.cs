@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OpenGob.PoliticalAdministrativeDivision.Models
 {
-    public class Province : AbstractDivision
+    public class Province : BaseDivision
     {
     }
 }

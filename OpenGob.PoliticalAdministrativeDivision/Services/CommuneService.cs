@@ -10,7 +10,7 @@ namespace OpenGob.PoliticalAdministrativeDivision.Services
 {
     public class CommuneService : ICommuneService
     {
-        HttpClient client = new HttpClient();
+        readonly HttpClient client = new HttpClient();
         public CommuneService()
         {
             client.BaseAddress = new Uri(@"http://apis.digital.gob.cl/dpa/");

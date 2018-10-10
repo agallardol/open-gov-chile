@@ -5,21 +5,21 @@ using System.Text;
 
 namespace OpenGob.PoliticalAdministrativeDivision.Models
 {
-    public abstract class AbstractDivision
+    public interface IDivision
     {
         [JsonProperty("codigo")]
-        public string Code;
+        string Code { get; set; }
 
         [JsonProperty("nombre")]
-        public string Name { get; set; }
+        string Name { get; set; }
 
         [JsonProperty("lat")]
-        public double Lat { get; set; }
+        double Lat { get; set; }
 
         [JsonProperty("lng")]
-        public double Lng { get; set; }
+        double Lng { get; set; }
 
         [JsonProperty("codigo_padre")]
-        public string ParentCode { get; set; }
+        string ParentCode { get; set; }
     }
 }

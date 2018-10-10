@@ -5,8 +5,7 @@ using System.Text;
 
 namespace OpenGob.PoliticalAdministrativeDivision.Models
 {
-    public class Region : AbstractDivision
+    public class Region : BaseDivision
     {
-
     }
 }

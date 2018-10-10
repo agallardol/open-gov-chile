@@ -4,8 +4,7 @@ using System.Text;
 
 namespace OpenGob.PoliticalAdministrativeDivision.Models
 {
-    public class Commune : AbstractDivision
+    public class Commune : BaseDivision
     {
-
     }
 }

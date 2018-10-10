@@ -12,6 +12,8 @@ namespace OpenGob
 {
     public class Program
     {
+        protected Program() { }
+
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();

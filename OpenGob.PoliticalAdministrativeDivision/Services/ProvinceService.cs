@@ -12,7 +12,7 @@ namespace OpenGob.PoliticalAdministrativeDivision.Services
     public class ProvinceService : IProvinceService
     {
 
-        HttpClient client = new HttpClient();
+        readonly HttpClient client = new HttpClient();
 
         public ProvinceService()
         {
