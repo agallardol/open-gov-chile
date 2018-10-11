@@ -24,7 +24,7 @@ namespace OpenGob.PoliticalAdministrativeDivision.Schema
             Field<StringGraphType>(
                 "imageUrl",
                 "Url del escudo de la comuna o en su defecto el logo de la municipalidad.",
-                resolve: context => $"{configurationService.Configuration.FileStorePath}{communeCsvRecordService.GetCommuneImagePath(context.Source.Code)}"
+                resolve: context => configurationService.Configuration.FileStoreUri.AbsoluteUri + communeCsvRecordService.GetCommuneImagePath(context.Source.Code)
             );
         }
     }

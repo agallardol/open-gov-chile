@@ -21,8 +21,7 @@ namespace OpenGob.PoliticalAdministrativeDivision.Services
             if (response.IsSuccessStatusCode)
             {
 
-                var a = JsonConvert.DeserializeObject<List<Commune>>(await response.Content.ReadAsStringAsync());
-                return a;
+                return JsonConvert.DeserializeObject<List<Commune>>(await response.Content.ReadAsStringAsync());
             }
             else
             {

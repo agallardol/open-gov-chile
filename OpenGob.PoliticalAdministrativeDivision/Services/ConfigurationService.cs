@@ -10,12 +10,11 @@ namespace OpenGob.PoliticalAdministrativeDivision.Services
 {
     public class ConfigurationService : IConfigurationService
     {
-        public Configuration Configuration { get; set; }
+        public PoliticalAdministrativeDivisionConfiguration Configuration { get; set; }
         public ConfigurationService()
         {
-            this.Configuration = new Configuration();
         }
-        public ConfigurationService(Configuration config)
+        public ConfigurationService(PoliticalAdministrativeDivisionConfiguration config)
         {
             Configuration = config;
         }
