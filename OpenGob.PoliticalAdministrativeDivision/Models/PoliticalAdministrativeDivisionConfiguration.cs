@@ -19,12 +19,11 @@ namespace OpenGob.PoliticalAdministrativeDivision.Models
         public Uri GraphQLUri { get => graphQLUri; }
         public Uri GraphQLPlaygroundUri { get => graphQLPlaygroundUri; }
 
-        public PoliticalAdministrativeDivisionConfiguration()
-        {
-
-        }
+        public PoliticalAdministrativeDivisionConfiguration(){}
         public PoliticalAdministrativeDivisionConfiguration(string graphQLPath, string deployedBaseUrl)
         {
+            graphQLPlaygroundOptions = null;
+            graphQLPlaygroundUri = null;
             filePathUri = new Uri(new Uri(deployedBaseUrl), graphQLPath);
             graphQLUri = new Uri(new Uri(deployedBaseUrl), graphQLPath);
         }
