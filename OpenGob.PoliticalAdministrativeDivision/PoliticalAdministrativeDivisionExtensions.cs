@@ -3,6 +3,7 @@ using GraphQL.Server;
 using GraphQL.Server.Transports.AspNetCore;
 using GraphQL.Server.Ui.Playground;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using OpenGob.PoliticalAdministrativeDivision.Models;
@@ -38,7 +39,7 @@ namespace OpenGob.PoliticalAdministrativeDivision
             return services;
         }
 
-        public static IApplicationBuilder UsePoliticalAdministrativeDivision(this IApplicationBuilder builder, Configuration config)
+        public static IApplicationBuilder UsePoliticalAdministrativeDivision(this IApplicationBuilder builder, PoliticalAdministrativeDivisionConfiguration config)
         {
             builder.ApplicationServices.GetRequiredService<IConfigurationService>().Configuration = config;
             builder.UseStaticFiles(new StaticFileOptions
@@ -46,15 +47,10 @@ namespace OpenGob.PoliticalAdministrativeDivision
                 FileProvider = new EmbeddedFileProvider(
                     Assembly.GetExecutingAssembly()
                 ),
-                RequestPath = config.GraphQlPath
+                RequestPath = config.GraphQLUri.AbsolutePath
             });
-            new Configuration
-            {
-                GraphQlPath = config.GraphQlPath,
-                DeployedBaseUrl = config.DeployedBaseUrl,
-                GraphQLPlaygroundOptions = config.GraphQLPlaygroundOptions
-            };
-            builder.UseGraphQL<PoliticalAdministrativeDivisionSchema>(config.GraphQlPath);
+
+            builder.UseGraphQL<PoliticalAdministrativeDivisionSchema>(config.GraphQLUri.AbsolutePath);
             if(config.GraphQLPlaygroundOptions != null) {
                 builder.UseGraphQLPlayground(config.GraphQLPlaygroundOptions);
             }

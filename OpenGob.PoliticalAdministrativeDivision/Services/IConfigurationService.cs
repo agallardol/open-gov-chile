@@ -10,6 +10,6 @@ namespace OpenGob.PoliticalAdministrativeDivision.Services
 {
     public interface IConfigurationService
     {
-        Configuration Configuration { get; set; }
+        PoliticalAdministrativeDivisionConfiguration Configuration { get; set; }
     }
 }

@@ -9,6 +9,7 @@ using GraphQL.Server.Transports.AspNetCore;
 using GraphQL.Server.Ui.Playground;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +17,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using OpenGob.PoliticalAdministrativeDivision;
+using OpenGob.PoliticalAdministrativeDivision.Models;
 using OpenGob.PoliticalAdministrativeDivision.Schema;
 using OpenGob.PoliticalAdministrativeDivision.Services;
 
@@ -31,9 +33,11 @@ namespace OpenGob
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public static void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+
             services.AddPoliticalAdministrativeDivision();
             services.AddGraphQL(options =>
             {
@@ -42,7 +46,7 @@ namespace OpenGob
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public static void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -56,17 +60,19 @@ namespace OpenGob
             app.UseHttpsRedirection();
             app.UseMvc();
 
+
+            IConfigurationSection padConfig = Configuration.GetSection("PAD");
+            string deployedBaseUrl = padConfig.GetValue<string>("DeployedBaseUrl");
+            if(string.IsNullOrEmpty(deployedBaseUrl))
+            {
+                deployedBaseUrl = app.ServerFeatures.Get<IServerAddressesFeature>().Addresses.FirstOrDefault();
+            }
             app.UsePoliticalAdministrativeDivision(
-                new PoliticalAdministrativeDivision.Models.Configuration
-                {
-                    GraphQlPath = "/graphql/pad",
-                    DeployedBaseUrl = "https://localhost:5001",
-                    GraphQLPlaygroundOptions = new GraphQLPlaygroundOptions
-                    {
-                        Path = "/ui/pad",
-                        GraphQLEndPoint = "/graphql/pad"
-                    }
-                }
+                new PoliticalAdministrativeDivisionConfiguration(
+                    padConfig.GetValue<string>("GraphQLPath"),
+                    deployedBaseUrl,
+                    padConfig.GetValue<string>("GraphQLPlaygroundPath")
+                )
             );
 
         }

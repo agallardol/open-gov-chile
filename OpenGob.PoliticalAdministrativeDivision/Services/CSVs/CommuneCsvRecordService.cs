@@ -14,7 +14,7 @@ namespace OpenGob.PoliticalAdministrativeDivision.Services.CSVs
     {
         readonly List<CommuneCsvRecord> communeCsvRecords;
 
-        readonly string COMMUNE_IMAGE_PATH = "public/images/communes/";
+        readonly string COMMUNE_IMAGE_PATH = "/public/images/communes/";
         readonly string CSV_RESOURCE_PATH = $"{Assembly.GetExecutingAssembly().GetName().Name}.CSVs.Municipalidades.csv";
         readonly string DELIMITER = ";";
 
