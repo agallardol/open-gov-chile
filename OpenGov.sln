@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGov", "OpenGov\OpenGov.csproj", "{5E44058D-7D38-4ED0-BFCE-3018B31B813D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGov.PoliticalAdministrativeDivision", "OpenGov.PoliticalAdministrativeDivision\OpenGov.PoliticalAdministrativeDivision.csproj", "{30284BD1-7BDB-447C-ADEA-E976541FBBC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E44058D-7D38-4ED0-BFCE-3018B31B813D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E44058D-7D38-4ED0-BFCE-3018B31B813D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E44058D-7D38-4ED0-BFCE-3018B31B813D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E44058D-7D38-4ED0-BFCE-3018B31B813D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30284BD1-7BDB-447C-ADEA-E976541FBBC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30284BD1-7BDB-447C-ADEA-E976541FBBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30284BD1-7BDB-447C-ADEA-E976541FBBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30284BD1-7BDB-447C-ADEA-E976541FBBC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40B89F0C-1A86-4CAE-B46D-1DFFE6DAEB99}
+	EndGlobalSection
+EndGlobal
