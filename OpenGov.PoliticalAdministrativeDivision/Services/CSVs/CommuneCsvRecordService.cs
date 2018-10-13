@@ -40,7 +40,9 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services.CSVs
             finally
             {
                 if (stream != null)
+                {
                     stream.Dispose();
+                }
             }
 
         }
