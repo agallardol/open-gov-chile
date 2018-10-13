@@ -11,16 +11,15 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
     public class CommuneService : ICommuneService
     {
         readonly HttpClient client = new HttpClient();
-        public CommuneService()
+        public CommuneService(IConfigurationService configurationService)
         {
-            client.BaseAddress = new Uri(@"http://apis.digital.gob.cl/dpa/");
+            client.BaseAddress = configurationService.Configuration.ApiDigitalGobClDPAUri;
         }
         public async Task<List<Commune>> GetCommunesAsync()
         {
             HttpResponseMessage response = await client.GetAsync("comunas");
             if (response.IsSuccessStatusCode)
             {
-
                 return JsonConvert.DeserializeObject<List<Commune>>(await response.Content.ReadAsStringAsync());
             }
             else

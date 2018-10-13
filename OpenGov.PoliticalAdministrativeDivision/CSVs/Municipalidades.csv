@@ -24,9 +24,9 @@
 13403;Calera de Tango;Calera de Tango.svg;;;;;;;;;
 05302;Calle Larga;Calle Larga.png;;;;;;;;;
 15102;Camarones;Camarones.svg;;;;;;;;;
-01402;Camiña;Camiña.svg;;;;;;;;;
+01402;Camiña;Camina.svg;;;;;;;;;
 04202;Canela;Canela.svg;;;;;;;;;
-08203;Cañete;Cañete.svg;;;;;;;;;
+08203;Cañete;Canete.svg;;;;;;;;;
 09102;Carahue;Carahue.svg;;;;;;;;;
 05603;Cartagena;Cartagena.png;;;;;;;;;
 05102;Casablanca;Casablanca.svg;;;;;;;;;
@@ -36,7 +36,7 @@
 13102;Cerrillos;Cerrillos.svg;;;;;;;;;
 13103;Cerro Navia;Cerro Navia.svg;;;;;;;;;
 10401;Chaitén;Chaiten.svg;;;;;;;;;
-03201;Chañaral;Chañaral.svg;;;;;;;;;
+03201;Chañaral;Chanaral.svg;;;;;;;;;
 07202;Chanco;Chanco.png;;;;;;;;;
 06302;Chépica;Chepica.png;;;;;;;;;
 08103;Chiguayante;Chiguayante.svg;;;;;;;;;
@@ -80,7 +80,7 @@
 07301;Curicó;Curico.svg;;;;;;;;;
 10205;Dalcahue;Dalcahue.png;;;;;;;;;
 03202;Diego de Almagro;Diego de Almagro.svg;;;;;;;;;
-06105;Doñihue;Doñihue.png;;;;;;;;;
+06105;Doñihue;Donihue.png;;;;;;;;;
 13105;El Bosque;El Bosque.png;;;;;;;;;
 16104;El Carmen;El Carmen.png;;;;;;;;;
 13602;El Monte;El Monte.png;;;;;;;;;
@@ -103,7 +103,7 @@
 11203;Guaitecas;Guaitecas.png;;;;;;;;;
 05503;Hijuelas;Hijuelas.png;;;;;;;;;
 10403;Hualaihué;Hualaihue.png;;;;;;;;;
-07302;Hualañé;Hualañe.svg;;;;;;;;;
+07302;Hualañé;Hualane.svg;;;;;;;;;
 08112;Hualpén;Hualpen.svg;;;;;;;;;
 08105;Hualqui;Hualqui.svg;;;;;;;;;
 01404;Huara;Huara.svg;;;;;;;;;
@@ -182,10 +182,10 @@
 06205;Navidad;Navidad.png;;;;;;;;;
 08307;Negrete;Negrete.svg;;;;;;;;;
 16204;Ninhue;Ninhue.svg;;;;;;;;;
-16303;Ñiquén;Ñiquen.svg;;;;;;;;;
+16303;Ñiquén;Niquen.svg;;;;;;;;;
 05506;Nogales;Nogales.png;;;;;;;;;
 09111;Nueva Imperial;Nueva Imperial.svg;;;;;;;;;
-13120;Ñuñoa;Ñuñoa.svg;;;;;;;;;
+13120;Ñuñoa;Nunoa.svg;;;;;;;;;
 06111;Olivar;Olivar.svg;;;;;;;;;
 02202;Ollagüe;Ollagüe.svg;;;;;;;;;
 05803;Olmué;Olmue.svg;;;;;;;;;
@@ -208,8 +208,8 @@
 07106;Pelarco;Pelarco.png;;;;;;;;;
 07203;Pelluhue;Pelluhue.png;;;;;;;;;
 16105;Pemuco;Pemuco.svg;;;;;;;;;
-13605;Peñaflor;Peñaflor.svg;;;;;;;;;
-13122;Peñalolén;Peñalolen.svg;;;;;;;;;
+13605;Peñaflor;Penaflor.svg;;;;;;;;;
+13122;Peñalolén;Penalolen.svg;;;;;;;;;
 07107;Pencahue;Pencahue.png;;;;;;;;;
 08107;Penco;Penco.svg;;;;;;;;;
 06307;Peralillo;Peralillo.png;;;;;;;;;
@@ -271,7 +271,7 @@
 14204;Río Bueno;Rio Bueno.svg;;;;;;;;;
 07108;Río Claro;Rio Claro.png;;;;;;;;;
 04305;Río Hurtado;Rio Hurtado.png;;;;;;;;;
-11402;Río Ibáñez;Rio Ibañez.svg;;;;;;;;;
+11402;Río Ibáñez;Rio Ibanez.svg;;;;;;;;;
 10305;Río Negro;Rio Negro.svg;;;;;;;;;
 12103;Río Verde;Rio Verde.png;;;;;;;;;
 07306;Romeral;Romeral.png;;;;;;;;;
@@ -333,12 +333,12 @@
 05101;Valparaíso;Valparaiso.svg;;;;;;;;;
 07309;Vichuquén;Vichuquen.png;;;;;;;;;
 09211;Victoria;Victoria.svg;;;;;;;;;
-04106;Vicuña;Vicuña.png;;;;;;;;;
+04106;Vicuña;Vicuna.png;;;;;;;;;
 09119;Vilcún;Vilcun.png;;;;;;;;;
 07407;Villa Alegre;Villa Alegre.svg;;;;;;;;;
 05804;Villa Alemana;Villa Alemana.svg;;;;;;;;;
 09120;Villarrica;Villarrica.svg;;;;;;;;;
-05109;Viña del Mar;Viña Del Mar.svg;;;;;;;;;
+05109;Viña del Mar;Vina Del Mar.svg;;;;;;;;;
 13132;Vitacura;Vitacura.svg;;;;;;;;;
 07408;Yerbas Buenas;Yerbas Buenas.svg;;;;;;;;;
 08313;Yumbel;Yumbel.svg;;;;;;;;;

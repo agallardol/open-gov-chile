@@ -22,6 +22,8 @@ namespace OpenGov.PoliticalAdministrativeDivision
     {
         public static IServiceCollection AddPoliticalAdministrativeDivision(this IServiceCollection services)
         {
+            services.AddSingleton<IConfigurationService, ConfigurationService>();
+
             services.AddSingleton<IProvinceService, ProvinceService>();
             services.AddSingleton<IRegionService, RegionService>();
             services.AddSingleton<ICommuneService, CommuneService>();
@@ -35,7 +37,6 @@ namespace OpenGov.PoliticalAdministrativeDivision
             services.AddSingleton<PoliticalAdministrativeDivisionSchema>();
 
             services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
-            services.AddSingleton<IConfigurationService, ConfigurationService>(c => new ConfigurationService());
             return services;
         }
 
@@ -49,7 +50,6 @@ namespace OpenGov.PoliticalAdministrativeDivision
                 ),
                 RequestPath = config.GraphQLUri.AbsolutePath
             });
-
             builder.UseGraphQL<PoliticalAdministrativeDivisionSchema>(config.GraphQLUri.AbsolutePath);
             if(config.GraphQLPlaygroundOptions != null) {
                 builder.UseGraphQLPlayground(config.GraphQLPlaygroundOptions);

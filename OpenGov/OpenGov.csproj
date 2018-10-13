@@ -23,4 +23,6 @@
   <ItemGroup>
     <ProjectReference Include="..\OpenGov.PoliticalAdministrativeDivision\OpenGov.PoliticalAdministrativeDivision.csproj" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>
 </Project>

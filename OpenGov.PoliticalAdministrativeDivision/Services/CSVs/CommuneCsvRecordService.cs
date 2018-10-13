@@ -20,10 +20,14 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services.CSVs
 
         public CommuneCsvRecordService()
         {
-            CsvReader csvReader;
-            using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(CSV_RESOURCE_PATH))
+            Stream stream = null;
+            try
+            {
+                stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(CSV_RESOURCE_PATH);
+                CsvReader csvReader;
                 using (TextReader reader = new StreamReader(stream))
                 {
+                    stream = null;
                     csvReader = new CsvReader(reader, new Configuration
                     {
                         HasHeaderRecord = false,
@@ -32,6 +36,13 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services.CSVs
                     });
                     communeCsvRecords = csvReader.GetRecords<CommuneCsvRecord>().ToList();
                 }
+            }
+            finally
+            {
+                if (stream != null)
+                    stream.Dispose();
+            }
+
         }
 
         public string GetCommuneImagePath(string communeCode)

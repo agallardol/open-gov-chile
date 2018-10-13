@@ -14,9 +14,9 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
 
         readonly HttpClient client = new HttpClient();
 
-        public ProvinceService()
+        public ProvinceService(IConfigurationService configurationService)
         {
-            client.BaseAddress = new Uri(@"http://apis.digital.gob.cl/dpa/");
+            client.BaseAddress = configurationService.Configuration.ApiDigitalGobClDPAUri;
         }
         public async Task<List<Province>> GetProvincesAsync()
         {

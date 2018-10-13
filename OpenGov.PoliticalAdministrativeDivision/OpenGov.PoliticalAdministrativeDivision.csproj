@@ -33,8 +33,10 @@
     <None Remove="public\images\communes\Calera.png" />
     <None Remove="public\images\communes\Calle Larga.png" />
     <None Remove="public\images\communes\Camarones.svg" />
+    <None Remove="public\images\communes\Camina.svg" />
     <None Remove="public\images\communes\Camiña.svg" />
     <None Remove="public\images\communes\Canela.svg" />
+    <None Remove="public\images\communes\Canete.svg" />
     <None Remove="public\images\communes\Carahue.svg" />
     <None Remove="public\images\communes\Cartagena.png" />
     <None Remove="public\images\communes\Casablanca.svg" />
@@ -45,6 +47,7 @@
     <None Remove="public\images\communes\Cerrillos.svg" />
     <None Remove="public\images\communes\Cerro Navia.svg" />
     <None Remove="public\images\communes\Chaiten.svg" />
+    <None Remove="public\images\communes\Chanaral.svg" />
     <None Remove="public\images\communes\Chanco.png" />
     <None Remove="public\images\communes\Chañaral.svg" />
     <None Remove="public\images\communes\Chepica.png" />
@@ -89,6 +92,7 @@
     <None Remove="public\images\communes\Curico.svg" />
     <None Remove="public\images\communes\Dalcahue.png" />
     <None Remove="public\images\communes\Diego de Almagro.svg" />
+    <None Remove="public\images\communes\Donihue.png" />
     <None Remove="public\images\communes\Doñihue.png" />
     <None Remove="public\images\communes\El Bosque.png" />
     <None Remove="public\images\communes\El Carmen.png" />
@@ -113,6 +117,7 @@
     <None Remove="public\images\communes\Hijuelas.png" />
     <None Remove="public\images\communes\Hualaihue.png" />
     <None Remove="public\images\communes\Hualalihué.png" />
+    <None Remove="public\images\communes\Hualane.svg" />
     <None Remove="public\images\communes\Hualañe.svg" />
     <None Remove="public\images\communes\Hualpen.svg" />
     <None Remove="public\images\communes\Hualqui.svg" />
@@ -194,10 +199,13 @@
     <None Remove="public\images\communes\Navidad.png" />
     <None Remove="public\images\communes\Negrete.svg" />
     <None Remove="public\images\communes\Ninhue.svg" />
+    <None Remove="public\images\communes\Niquen.svg" />
     <None Remove="public\images\communes\Nogales.png" />
     <None Remove="public\images\communes\Nueva Imperial.svg" />
+    <None Remove="public\images\communes\Nunoa.svg" />
     <None Remove="public\images\communes\OHiggins.png" />
     <None Remove="public\images\communes\Olivar.svg" />
+    <None Remove="public\images\communes\Ollagüe.svg" />
     <None Remove="public\images\communes\Ollagüe.svg" />
     <None Remove="public\images\communes\Olmue.svg" />
     <None Remove="public\images\communes\Osorno.svg" />
@@ -219,6 +227,8 @@
     <None Remove="public\images\communes\Pelarco.png" />
     <None Remove="public\images\communes\Pelluhue.png" />
     <None Remove="public\images\communes\Pemuco.svg" />
+    <None Remove="public\images\communes\Penaflor.svg" />
+    <None Remove="public\images\communes\Penalolen.svg" />
     <None Remove="public\images\communes\Pencahue.png" />
     <None Remove="public\images\communes\Penco.svg" />
     <None Remove="public\images\communes\Peralillo.png" />
@@ -282,6 +292,7 @@
     <None Remove="public\images\communes\Rio Bueno.svg" />
     <None Remove="public\images\communes\Rio Claro.png" />
     <None Remove="public\images\communes\Rio Hurtado.png" />
+    <None Remove="public\images\communes\Rio Ibanez.svg" />
     <None Remove="public\images\communes\Rio Ibañez.svg" />
     <None Remove="public\images\communes\Rio Negro.svg" />
     <None Remove="public\images\communes\Rio Verde.png" />
@@ -345,11 +356,13 @@
     <None Remove="public\images\communes\Valparaiso.svg" />
     <None Remove="public\images\communes\Vichuquen.png" />
     <None Remove="public\images\communes\Victoria.svg" />
+    <None Remove="public\images\communes\Vicuna.png" />
     <None Remove="public\images\communes\Vicuña.png" />
     <None Remove="public\images\communes\Vilcun.png" />
     <None Remove="public\images\communes\Villa Alegre.svg" />
     <None Remove="public\images\communes\Villa Alemana.svg" />
     <None Remove="public\images\communes\Villarrica.svg" />
+    <None Remove="public\images\communes\Vina Del Mar.svg" />
     <None Remove="public\images\communes\Vitacura.svg" />
     <None Remove="public\images\communes\Viña Del Mar.svg" />
     <None Remove="public\images\communes\Yerbas Buenas.svg" />
@@ -388,20 +401,20 @@
     <EmbeddedResource Include="public\images\communes\Calera.png" />
     <EmbeddedResource Include="public\images\communes\Calle Larga.png" />
     <EmbeddedResource Include="public\images\communes\Camarones.svg" />
-    <EmbeddedResource Include="public\images\communes\Camiña.svg" />
+    <EmbeddedResource Include="public\images\communes\Camina.svg" />
     <EmbeddedResource Include="public\images\communes\Canela.svg" />
+    <EmbeddedResource Include="public\images\communes\Canete.svg" />
     <EmbeddedResource Include="public\images\communes\Carahue.svg" />
     <EmbeddedResource Include="public\images\communes\Cartagena.png" />
     <EmbeddedResource Include="public\images\communes\Casablanca.svg" />
     <EmbeddedResource Include="public\images\communes\Castro.svg" />
     <EmbeddedResource Include="public\images\communes\Catemu.png" />
     <EmbeddedResource Include="public\images\communes\Cauquenes.png" />
-    <EmbeddedResource Include="public\images\communes\Cañete.svg" />
     <EmbeddedResource Include="public\images\communes\Cerrillos.svg" />
     <EmbeddedResource Include="public\images\communes\Cerro Navia.svg" />
     <EmbeddedResource Include="public\images\communes\Chaiten.svg" />
+    <EmbeddedResource Include="public\images\communes\Chanaral.svg" />
     <EmbeddedResource Include="public\images\communes\Chanco.png" />
-    <EmbeddedResource Include="public\images\communes\Chañaral.svg" />
     <EmbeddedResource Include="public\images\communes\Chiguayante.svg" />
     <EmbeddedResource Include="public\images\communes\Chile Chico.png" />
     <EmbeddedResource Include="public\images\communes\Chillan Viejo.svg" />
@@ -444,7 +457,7 @@
     <EmbeddedResource Include="public\images\communes\Curico.svg" />
     <EmbeddedResource Include="public\images\communes\Dalcahue.png" />
     <EmbeddedResource Include="public\images\communes\Diego de Almagro.svg" />
-    <EmbeddedResource Include="public\images\communes\Doñihue.png" />
+    <EmbeddedResource Include="public\images\communes\Donihue.png" />
     <EmbeddedResource Include="public\images\communes\El Bosque.png" />
     <EmbeddedResource Include="public\images\communes\El Carmen.png" />
     <EmbeddedResource Include="public\images\communes\El Monte.png" />
@@ -467,7 +480,7 @@
     <EmbeddedResource Include="public\images\communes\Guaitecas.png" />
     <EmbeddedResource Include="public\images\communes\Hijuelas.png" />
     <EmbeddedResource Include="public\images\communes\Hualaihue.png" />
-    <EmbeddedResource Include="public\images\communes\Hualañe.svg" />
+    <EmbeddedResource Include="public\images\communes\Hualane.svg" />
     <EmbeddedResource Include="public\images\communes\Hualpen.svg" />
     <EmbeddedResource Include="public\images\communes\Hualqui.svg" />
     <EmbeddedResource Include="public\images\communes\Huara.svg" />
@@ -546,11 +559,13 @@
     <EmbeddedResource Include="public\images\communes\Navidad.png" />
     <EmbeddedResource Include="public\images\communes\Negrete.svg" />
     <EmbeddedResource Include="public\images\communes\Ninhue.svg" />
+    <EmbeddedResource Include="public\images\communes\Niquen.svg" />
     <EmbeddedResource Include="public\images\communes\Nogales.png" />
     <EmbeddedResource Include="public\images\communes\Nueva Imperial.svg" />
+    <EmbeddedResource Include="public\images\communes\Nunoa.svg" />
     <EmbeddedResource Include="public\images\communes\OHiggins.png" />
     <EmbeddedResource Include="public\images\communes\Olivar.svg" />
-    <EmbeddedResource Include="public\images\communes\Ollagüe.svg" />
+    <EmbeddedResource Include="public\images\communes\Ollagüe.svg" />
     <EmbeddedResource Include="public\images\communes\Olmue.svg" />
     <EmbeddedResource Include="public\images\communes\Osorno.svg" />
     <EmbeddedResource Include="public\images\communes\Ovalle.svg" />
@@ -570,14 +585,14 @@
     <EmbeddedResource Include="public\images\communes\Pelarco.png" />
     <EmbeddedResource Include="public\images\communes\Pelluhue.png" />
     <EmbeddedResource Include="public\images\communes\Pemuco.svg" />
+    <EmbeddedResource Include="public\images\communes\Penaflor.svg" />
+    <EmbeddedResource Include="public\images\communes\Penalolen.svg" />
     <EmbeddedResource Include="public\images\communes\Pencahue.png" />
     <EmbeddedResource Include="public\images\communes\Penco.svg" />
     <EmbeddedResource Include="public\images\communes\Peralillo.png" />
     <EmbeddedResource Include="public\images\communes\Perquenco.png" />
     <EmbeddedResource Include="public\images\communes\Petorca.png" />
     <EmbeddedResource Include="public\images\communes\Peumo.svg" />
-    <EmbeddedResource Include="public\images\communes\Peñaflor.svg" />
-    <EmbeddedResource Include="public\images\communes\Peñalolen.svg" />
     <EmbeddedResource Include="public\images\communes\Pica.svg" />
     <EmbeddedResource Include="public\images\communes\Pichidehua.png" />
     <EmbeddedResource Include="public\images\communes\Pichilemu.svg" />
@@ -629,7 +644,7 @@
     <EmbeddedResource Include="public\images\communes\Requinoa.png" />
     <EmbeddedResource Include="public\images\communes\Retiro.png" />
     <EmbeddedResource Include="public\images\communes\Rinconada.svg" />
-    <EmbeddedResource Include="public\images\communes\Rio Ibañez.svg" />
+    <EmbeddedResource Include="public\images\communes\Rio Ibanez.svg" />
     <EmbeddedResource Include="public\images\communes\Romeral.png" />
     <EmbeddedResource Include="public\images\communes\Ranquil.png" />
     <EmbeddedResource Include="public\images\communes\Rio Bueno.svg" />
@@ -695,19 +710,17 @@
     <EmbeddedResource Include="public\images\communes\Valparaiso.svg" />
     <EmbeddedResource Include="public\images\communes\Vichuquen.png" />
     <EmbeddedResource Include="public\images\communes\Victoria.svg" />
-    <EmbeddedResource Include="public\images\communes\Vicuña.png" />
+    <EmbeddedResource Include="public\images\communes\Vicuna.png" />
     <EmbeddedResource Include="public\images\communes\Vilcun.png" />
     <EmbeddedResource Include="public\images\communes\Villa Alegre.svg" />
     <EmbeddedResource Include="public\images\communes\Villa Alemana.svg" />
     <EmbeddedResource Include="public\images\communes\Villarrica.svg" />
+    <EmbeddedResource Include="public\images\communes\Vina Del Mar.svg" />
     <EmbeddedResource Include="public\images\communes\Vitacura.svg" />
-    <EmbeddedResource Include="public\images\communes\Viña Del Mar.svg" />
     <EmbeddedResource Include="public\images\communes\Yerbas Buenas.svg" />
     <EmbeddedResource Include="public\images\communes\Yumbel.svg" />
     <EmbeddedResource Include="public\images\communes\Yungay.svg" />
     <EmbeddedResource Include="public\images\communes\Zapallar.svg" />
-    <EmbeddedResource Include="public\images\communes\Ñiquen.svg" />
-    <EmbeddedResource Include="public\images\communes\Ñuñoa.svg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -728,11 +741,8 @@
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
       <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.FileProviders.Physical">
-      <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.fileproviders.physical\2.1.1\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNetCore">
-      <HintPath>..\..\..\..\..\..\..\usr\local\share\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel.Protocols">
+      <HintPath>..\..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.identitymodel.protocols\5.2.0\lib\netstandard1.4\Microsoft.IdentityModel.Protocols.dll</HintPath>
     </Reference>
   </ItemGroup>
 

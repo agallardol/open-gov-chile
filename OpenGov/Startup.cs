@@ -58,19 +58,16 @@ namespace OpenGov
             }
 
             app.UseHttpsRedirection();
+
             app.UseMvc();
 
 
             IConfigurationSection padConfig = Configuration.GetSection("PAD");
-            string deployedBaseUrl = padConfig.GetValue<string>("DeployedBaseUrl");
-            if(string.IsNullOrEmpty(deployedBaseUrl))
-            {
-                deployedBaseUrl = app.ServerFeatures.Get<IServerAddressesFeature>().Addresses.FirstOrDefault();
-            }
             app.UsePoliticalAdministrativeDivision(
                 new PoliticalAdministrativeDivisionConfiguration(
+                    padConfig.GetValue<string>("ApiDigitalGobClDPA"),
                     padConfig.GetValue<string>("GraphQLPath"),
-                    deployedBaseUrl,
+                    padConfig.GetValue<string>("DeployedBaseUrl"),
                     padConfig.GetValue<string>("GraphQLPlaygroundPath")
                 )
             );
