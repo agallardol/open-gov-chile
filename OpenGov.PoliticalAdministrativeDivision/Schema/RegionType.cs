@@ -18,7 +18,7 @@ namespace OpenGov.PoliticalAdministrativeDivision.Schema
             Field<ListGraphType<ProvinceType>>(
                 "provinces",
                 "Provincias pertenecientes a la región.",
-                resolve: context => provinces.GetProvincesByRegionAsync(context.Source.Code)
+                resolve: context => provinces.GetProvincesByRegion(context.Source.Code)
             );
         }
     }

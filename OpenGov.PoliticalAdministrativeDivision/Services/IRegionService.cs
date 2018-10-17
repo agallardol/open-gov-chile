@@ -12,5 +12,7 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
     {
         Task<List<Region>> GetRegionsAsync();
         Task<Region> GetRegionAsync(string code);
+        List<Region> GetRegions();
+        Region GetRegion(string code);
     }
 }

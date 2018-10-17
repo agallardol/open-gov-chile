@@ -11,9 +11,11 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
     public class CommuneService : ICommuneService
     {
         readonly HttpClient client = new HttpClient();
+        readonly List<Commune> communes;
         public CommuneService(IConfigurationService configurationService)
         {
             client.BaseAddress = configurationService.Configuration.ApiDigitalGobClDPAUri;
+            communes = GetCommunesAsync().Result;
         }
         public async Task<List<Commune>> GetCommunesAsync()
         {
@@ -39,6 +41,16 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
             {
                 throw new HttpRequestException();
             }
+        }
+
+        public List<Commune> GetCommunes()
+        {
+            return communes;
+        }
+
+        public List<Commune> GetCommunesByProvince(string provinceCode)
+        {
+            return communes.FindAll(c => c.Code == provinceCode);
         }
     }
 }

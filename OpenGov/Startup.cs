@@ -58,8 +58,6 @@ namespace OpenGov
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseMvc();
             app.UseWelcomePage("/");
 
