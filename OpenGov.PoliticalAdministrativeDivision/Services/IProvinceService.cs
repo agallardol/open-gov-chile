@@ -14,5 +14,8 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
         Task<Province> GetProvinceAsync(string provinceCode);
 
         Task<List<Province>> GetProvincesByRegionAsync(string regionCode);
+        List<Province> GetProvinces();
+        Province GetProvince(string provinceCode);
+        List<Province> GetProvincesByRegion(string regionCode);
     }
 }

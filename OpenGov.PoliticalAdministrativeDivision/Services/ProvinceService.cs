@@ -13,10 +13,11 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
     {
 
         readonly HttpClient client = new HttpClient();
-
+        readonly List<Province> provinces;
         public ProvinceService(IConfigurationService configurationService)
         {
             client.BaseAddress = configurationService.Configuration.ApiDigitalGobClDPAUri;
+            provinces = GetProvincesAsync().Result;
         }
         public async Task<List<Province>> GetProvincesAsync()
         {
@@ -56,5 +57,21 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
                 throw new HttpRequestException();
             }
         }
+
+        public List<Province> GetProvinces()
+        {
+            return provinces;
+        }
+
+        public Province GetProvince(string provinceCode)
+        {
+            return provinces.Find(p => p.Code == provinceCode);
+        }
+
+        public List<Province> GetProvincesByRegion(string regionCode)
+        {
+            return provinces.FindAll(p => p.ParentCode == regionCode);
+        }
+
     }
 }

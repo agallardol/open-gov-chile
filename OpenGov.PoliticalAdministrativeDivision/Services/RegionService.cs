@@ -13,10 +13,24 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
     {
 
         readonly HttpClient client = new HttpClient();
-
+        readonly List<Region> regions;
         public RegionService(IConfigurationService configurationService)
         {
             client.BaseAddress = configurationService.Configuration.ApiDigitalGobClDPAUri;
+            regions = GetRegionsAsync().Result;
+        }
+
+        public async Task<List<Region>> GetRegionsAsync()
+        {
+            HttpResponseMessage response = await client.GetAsync("regiones");
+            if (response.IsSuccessStatusCode)
+            {
+                return JsonConvert.DeserializeObject<List<Region>>(await response.Content.ReadAsStringAsync());
+            }
+            else
+            {
+                throw new HttpRequestException();
+            }
         }
 
         public async Task<Region> GetRegionAsync(string code)
@@ -32,17 +46,14 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
             }
         }
 
-        public async Task<List<Region>> GetRegionsAsync()
+        public List<Region> GetRegions()
         {
-            HttpResponseMessage response = await client.GetAsync("regiones");
-            if (response.IsSuccessStatusCode)
-            {
-                return JsonConvert.DeserializeObject<List<Region>>(await response.Content.ReadAsStringAsync());
-            }
-            else
-            {
-                throw new HttpRequestException();
-            }
+            return regions;
+        }
+
+        public Region GetRegion(string code)
+        {
+            return regions.Find(r => r.Code == code);
         }
     }
 }

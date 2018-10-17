@@ -23,13 +23,13 @@ namespace OpenGov.PoliticalAdministrativeDivision.Schema
             Field<RegionType>(
                 "region",
                 "Región a la que pertenece la provincia.",
-                resolve: context => regions.GetRegionAsync(context.Source.ParentCode)
+                resolve: context => regions.GetRegion(context.Source.ParentCode)
             );
 
             Field<ListGraphType<CommuneType>>(
                 "communes",
                 "Comunas pertenecientes a la provincia.",
-                resolve: context => communes.GetCommunesByProvinceAsync(context.Source.Code)
+                resolve: context => communes.GetCommunesByProvince(context.Source.Code)
             );
         }
     }

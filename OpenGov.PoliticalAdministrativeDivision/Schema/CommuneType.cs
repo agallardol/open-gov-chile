@@ -19,7 +19,7 @@ namespace OpenGov.PoliticalAdministrativeDivision.Schema
             Field<ProvinceType>(
                 "province",
                 "Provincia a la que pertenece la comuna.",
-                resolve: context => provinceService.GetProvinceAsync(context.Source.ParentCode)
+                resolve: context => provinceService.GetProvince(context.Source.ParentCode)
             );
             Field<StringGraphType>(
                 "imageUrl",
