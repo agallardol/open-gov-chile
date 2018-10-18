@@ -34,6 +34,7 @@ namespace OpenGov.PoliticalAdministrativeDivision
             services.AddSingleton<CommuneType>();
 
             services.AddSingleton<PoliticalAdministrativeDivisionQuery>();
+            services.AddSingleton<PoliticalAdministrativeDivisionMutation>();
             services.AddSingleton<PoliticalAdministrativeDivisionSchema>();
 
             services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));

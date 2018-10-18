@@ -48,6 +48,11 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
             return communes;
         }
 
+        public Commune GetCommune(string code)
+        {
+            return communes.Find(c => c.Code == code);
+        }
+
         public List<Commune> GetCommunesByProvince(string provinceCode)
         {
             return communes.FindAll(c => c.Code == provinceCode);

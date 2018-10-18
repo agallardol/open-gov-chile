@@ -14,5 +14,6 @@ namespace OpenGov.PoliticalAdministrativeDivision.Services
         Task<List<Commune>> GetCommunesByProvinceAsync(string provinceCode);
         List<Commune> GetCommunes();
         List<Commune> GetCommunesByProvince(string provinceCode);
+        Commune GetCommune(string code);
     }
 }
