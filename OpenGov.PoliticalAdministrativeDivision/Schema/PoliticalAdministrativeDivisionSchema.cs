@@ -12,10 +12,12 @@ namespace OpenGov.PoliticalAdministrativeDivision.Schema
     {
         public PoliticalAdministrativeDivisionSchema(
             PoliticalAdministrativeDivisionQuery query, 
+            PoliticalAdministrativeDivisionMutation mutation,
             IDependencyResolver resolver)
         {
             Query = query;
             DependencyResolver = resolver;
+            Mutation = mutation;
         }
     }
 }
