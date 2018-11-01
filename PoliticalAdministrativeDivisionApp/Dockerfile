@@ -1,13 +1,13 @@
-FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
+FROM microsoft/dotnet:2.1-aspnetcore-runtime-alpine AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/dotnet:2.1-sdk AS build
+FROM microsoft/dotnet:2.1-sdk-alpine AS build
 WORKDIR /src
 COPY ["PoliticalAdministrativeDivisionApp/PoliticalAdministrativeDivisionApp.csproj", "PoliticalAdministrativeDivisionApp/"]
 RUN dotnet restore "PoliticalAdministrativeDivisionApp/PoliticalAdministrativeDivisionApp.csproj"
 COPY . .
-WORKDIR /src/PoliticalAdministrativeDivision
+WORKDIR /src/PoliticalAdministrativeDivisionApp
 RUN dotnet build "PoliticalAdministrativeDivisionApp.csproj" -c Release -o /app
 
 FROM build AS publish
