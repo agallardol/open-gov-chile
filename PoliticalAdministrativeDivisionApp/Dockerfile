@@ -1,8 +1,8 @@
-FROM microsoft/dotnet:2.1-aspnetcore-runtime-alpine AS base
+FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/dotnet:2.1-sdk-alpine AS build
+FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
 COPY ["PoliticalAdministrativeDivisionApp/PoliticalAdministrativeDivisionApp.csproj", "PoliticalAdministrativeDivisionApp/"]
 RUN dotnet restore "PoliticalAdministrativeDivisionApp/PoliticalAdministrativeDivisionApp.csproj"
