@@ -1,8 +1,8 @@
-FROM microsoft/dotnet:2.1-runtime-deps-stretch-slim-arm32v7 AS base
+FROM microsoft/dotnet:2.1-aspnetcore-runtime-stretch-slim-arm32v7 AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM microsoft/dotnet:2.1-sdk-stretch-arm32v7 AS build
+FROM microsoft/dotnet:2.1-sdk-alpine AS build
 WORKDIR /src
 COPY ["PoliticalAdministrativeDivisionApp/PoliticalAdministrativeDivisionApp.csproj", "PoliticalAdministrativeDivisionApp/"]
 RUN dotnet restore "PoliticalAdministrativeDivisionApp/PoliticalAdministrativeDivisionApp.csproj"
